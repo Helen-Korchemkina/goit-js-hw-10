@@ -61,6 +61,7 @@ function ifOnlyOneCountry(countries) {
   countryInfo.insertAdjacentHTML('beforeend', info);
 }
 
-function onFetchError() {
-  Notify.warning('Oops, there is no country with that name');
+function onFetchError(error) {
+    Notify.warning('Oops, there is no country with that name');
+    console.log(error);
 }
